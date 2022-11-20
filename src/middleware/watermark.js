@@ -19,7 +19,7 @@ const watermarker = async (req, res, next) => {
         opacity: 0.6, //Should be less than one
         dstPath: dst
     };
-    await watermark.addWatermark(`${req.file.path}`, 'src/temp/watermarker.png', options);
+    await watermark.addWatermark(`${req.file.path}`, 'src/assets/watermarker.png', options);
 
     req.watermark_path = dst;
     req.watermark_name = `wm-${req.file.originalname}`;
