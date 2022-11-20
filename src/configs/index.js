@@ -1,0 +1,1 @@
+exports.connectMongo = require('./mogo.config')
